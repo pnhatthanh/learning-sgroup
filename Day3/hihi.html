@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* .circle{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 100%;
+            transform: translateY(60px);
+            transform: scale(2);
+            transform: skew(30deg);
+        } */
+        .circle1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100%;
+            transition-delay: 1s;
+            transition: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .circle1:hover{
+            background-color: aqua;
+            transform: scale(3);
+        }
+        .circle2{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 100%;
+            transform: translateY(70px);
+            transition: 2s;
+        }
+        .circle2:hover{
+            background-color: rgb(13, 179, 57);
+            transform: translateX(100px);
+        }
+        .box{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            height: 40px;
+            width: 40px;
+            margin-top: 100px;
+            margin-left: 400px;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-direction: alternate;
+        }
+        @keyframes example {
+            0% {box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+            20% {box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+            50%{width:40px;height: 300px;}
+            100%{height: 400px;
+            width: 600px;}
+        
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="circle">
+            hhiih
+        </div>
+
+        <p>hihi</p> -->
+        <!-- <div style="margin-top: 50px; margin-left: 100px;"  class="circle2"></div>
+    <div style="margin-top: 50px; margin-left: 100px;" class="circle1">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br> -->
+    <div class="box"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" style="text-align: center;">Loading...</h1>
+    <div style="text-align: center;"><img id="img" src="" alt=""></div>
+
+</body>
+<script>
+    setTimeout(()=>{
+        const h=document.getElementById("title");
+        h.innerHTML="POKEMON";
+        fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+    .then(response=>{
+        if(response.status==200){
+            return response.json()
+        }
+    })
+    .then(res=>{
+        console.log(res);
+        const i=document.getElementById("img");
+        i.src=res.sprites.back_default;
+        
+    })
+    .catch(error=>{
+        console.log(error);
+    })
+    },3000)
+    
+</script>
+</html>
